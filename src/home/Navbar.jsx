@@ -110,7 +110,7 @@ export default function Navbar({userData}) {
                         series={[
                             { data: generateRandomData() , color: "green"},
                             { data: generateRandomData(), color: "gray"},
-                            { data: generateRandomData(), color: ""}
+                            { data: generateRandomData(), color: "black"}
                         ]}
                         width={400}
                         height={250}
