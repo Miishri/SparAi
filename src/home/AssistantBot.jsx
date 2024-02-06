@@ -41,7 +41,7 @@ export default function AssistantBot() {
     const navigate = useNavigate()
     const handleBackClick = () => {
         showChat(false)
-        navigate("/dashboard");
+        navigate(-1);
     };
 
     return (
