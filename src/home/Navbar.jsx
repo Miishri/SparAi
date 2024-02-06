@@ -1,7 +1,6 @@
 import {ResponsiveLine} from "@nivo/line";
 import {Link} from "react-router-dom";
 import { BarChart } from '@mui/x-charts/BarChart';
-import { axisClasses } from '@mui/x-charts';
 
 const data = [
     {
