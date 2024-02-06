@@ -10,20 +10,20 @@ import {useNavigate} from "react-router-dom";
 import ConfirmForm from "./ConfirmForm.jsx";
 
 const INITIAL_USER_DATA = {
-    fullName: "Muhammad",
-    email: "muhammadshamaeem@gmail.com",
-    age: "18",
-    isStudent: "Yes",
-    location: "Stockholm",
-    apartmentProvider: "Stockholms Hem",
-    electricityProvider: "Vattenfall",
-    rent: "12000",
-    salary: "20000",
-    monthlyBudget: "8000",
-    travelExpenses: "1000",
-    groceryExpenses: "1000",
-    studentAid: "3000",
-    hasGym: "Yes",
+    fullName: "",
+    email: "",
+    age: "",
+    isStudent: "",
+    location: "",
+    apartmentProvider: "",
+    electricityProvider: "",
+    rent: "",
+    salary: "",
+    monthlyBudget: "",
+    travelExpenses: "",
+    groceryExpenses: "",
+    studentAid: "",
+    hasGym: "",
     moreInformation: ""
 }
 

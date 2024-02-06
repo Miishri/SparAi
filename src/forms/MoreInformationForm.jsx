@@ -16,7 +16,7 @@ export default function MoreInformationForm({moreInformation, updateFields}) {
                        updateFields({moreInformation: e.target.value})
                    }}/>
             <label>Further Information (Optional) </label>
-            <button className={"getting-started-next"} style={{marginLeft: "20vw", marginTop: "-10vh"}} >Record Audio</button>
+            <button className={"getting-started-next"} style={{marginLeft: "20vw", marginTop: "-10vh"}} onClick={() => navigate("/record-details")}>Record Audio</button>
         </div>
     )
 }
