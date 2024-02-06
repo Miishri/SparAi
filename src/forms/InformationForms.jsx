@@ -7,21 +7,23 @@ import {useEffect, useState} from "react";
 import MoreInformationForm from "./MoreInformationForm.jsx";
 import Back from "../extras/Back.jsx";
 import {useNavigate} from "react-router-dom";
+import ConfirmForm from "./ConfirmForm.jsx";
 
 const INITIAL_USER_DATA = {
-    fullName: "",
-    email: "",
-    age: "",
-    isStudent: "",
-    location: "",
-    apartmentProvider: "",
-    electricityProvider: "",
-    rent: "",
-    salary: "",
-    monthlyBudget: "",
-    travelExpenses: "",
-    studentAid: "",
-    hasGym: "",
+    fullName: "Muhammad",
+    email: "muhammadshamaeem@gmail.com",
+    age: "18",
+    isStudent: "Yes",
+    location: "Stockholm",
+    apartmentProvider: "Stockholms Hem",
+    electricityProvider: "Vattenfall",
+    rent: "12000",
+    salary: "20000",
+    monthlyBudget: "8000",
+    travelExpenses: "1000",
+    groceryExpenses: "1000",
+    studentAid: "3000",
+    hasGym: "Yes",
     moreInformation: ""
 }
 
@@ -98,6 +100,7 @@ export default function InformationForms() {
         <HousingForm {...userData} updateFields={updateFields}/>,
         <ExpenseForm {...userData} updateFields={updateFields}/>,
         <MoreInformationForm {...userData} updateFields={updateFields} />,
+        <ConfirmForm userData={userData} updateFields={updateFields} />
     ])
 
     function onSubmit(e) {

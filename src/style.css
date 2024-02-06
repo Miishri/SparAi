@@ -176,6 +176,23 @@ a {
   color: white;
 }
 
+.send {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 30px;
+  margin-left: 30vw;
+  letter-spacing: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 2px solid green;
+  color: white;
+}
+
 .getting-started-next {
   margin-left: 30vw;
 }
@@ -341,21 +358,32 @@ select::-ms-expand {
 }
 
 .welcome {
-  font-size: 0.8rem;
-  display: inline-block;
+  font-size: 1.2rem;
   padding-left: 5px;
 
-  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+  top: 89%;
+  margin-left: 100px;
+  bottom: 45px;
 }
 
+.heading {
+  background: #0b272e;
+}
 .notification {
-  margin-top: 10px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
   gap: 7px;
+
+  background: #0b272e;
+  height: 30vh;
+  padding-top: 10px;
+
+  border-bottom-left-radius: 20px;
+  border-end-end-radius: 20px;
 }
 
 .bottom-bar {
@@ -372,7 +400,7 @@ select::-ms-expand {
 }
 
 .electricity-container {
-  padding-top: 5px;
+  padding-top: 10px;
 
   display: flex;
   flex-direction: column;

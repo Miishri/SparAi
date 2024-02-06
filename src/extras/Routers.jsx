@@ -5,6 +5,7 @@ import {AnimatePresence} from 'framer-motion';
 import InformationForms from "../forms/InformationForms.jsx";
 import AssistantBot from "../home/AssistantBot.jsx";
 import Dashboard from "../home/Dashboard.jsx";
+import RecordDetails from "../forms/RecordDetails.jsx";
 
 export default function Routers() {
     const location = useLocation()
@@ -16,6 +17,7 @@ export default function Routers() {
                 <Route path="/gettingstarted" element={<InformationForms />}/>
                 <Route path="/dashboard" element={<Dashboard />}/>
                 <Route path="/chatbot" element={<AssistantBot />}/>
+                <Route path="/record-details" element={<RecordDetails />}/>
             </Routes>
         </AnimatePresence>
     )
