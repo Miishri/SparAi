@@ -24,7 +24,7 @@ export default function RecordDetails({moreInformation, updateFields}) {
             </div>
             {audioData && <button className={"send"} onClick={() => {
                 navigate(-1)
-            }}>Send to TTS</button>}
+            }}>Send to STT</button>}
         </>
     )
 }
