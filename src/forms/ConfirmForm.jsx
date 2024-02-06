@@ -2,7 +2,7 @@
 export default function ConfirmForm({userData, updateFields}) {
 
     return (
-        <div style={{display:"flex", flexDirection: "column"}}>
+        <div style={{display:"flex", flexDirection: "column", gap: "20px"}}>
             <div className="user-box">
                 <input type="text" name="fullname" required minLength={1} value={userData.fullName} onChange={e => {
                     updateFields({fullName: e.target.value})
@@ -103,7 +103,7 @@ export default function ConfirmForm({userData, updateFields}) {
                            }}/>
                     <label className='tgl-btn' htmlFor='toggle-34'></label>
                 </div>
-                <div className="user-box" >
+                <div className="user-box" style={{marginTop: "30px"}}>
                     <input type={"text"} name="moreInfo" maxLength={200} value={userData.moreInformation}
                            onChange={e => {
                                updateFields({moreInformation: e.target.value})

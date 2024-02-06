@@ -1,5 +1,7 @@
 import {ResponsiveLine} from "@nivo/line";
 import {Link} from "react-router-dom";
+import { BarChart } from '@mui/x-charts/BarChart';
+import { axisClasses } from '@mui/x-charts';
 
 const data = [
     {
@@ -37,7 +39,9 @@ const data = [
 const imageBucket = "https://s3.eu-de.cloud-object-storage.appdomain.cloud/cloud-object-storage-sparai-xyz"
 export default function Navbar({userData}) {
     const currentTime = new Date().toLocaleTimeString().substring(0, 5);
-
+    const generateRandomData = () => {
+        return Array.from({ length: 7 }, () => Math.floor(Math.random() * 100) + 1); // Generates random integers between 1 and 10
+    };
     return (
         <>
             <div className={"heading"}>
@@ -96,36 +100,44 @@ export default function Navbar({userData}) {
                         <p className={"possible-saving"}>Possible savings: 5 SEK at {currentTime}</p>
                     </div>
                 </div>
+                <div className={"suggestion"}>
+                    <h4>This Weeks Energy Usage</h4>
+                    <BarChart
+                        xAxis={[{
+                            scaleType: 'band',
+                            data: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+                        }]}
+                        series={[
+                            { data: generateRandomData() , color: "green"},
+                            { data: generateRandomData(), color: "gray"},
+                            { data: generateRandomData(), color: ""}
+                        ]}
+                        width={400}
+                        height={250}
+                    />
+                </div>
                 <div className={"bottom-bar"}>
                     <div className={"tips"}>
                         <div className={"tips-container"}>
                             <img src={imageBucket + "/house.png"} alt={"house picture"}
                                  className={"tips picture"}/>
-                            <p className={"bot-tips"}>Find Apartment</p>
                         </div>
                         <div className={"tips-container"}>
                             <img src={imageBucket + "/saving.png"} alt={"saving picture"}
                                  className={"tips picture"}/>
-                            <p className={"saving tips"}>Save energy</p>
                         </div>
                         <div className={"tips-container"}>
                             <img src={imageBucket + "/cheap-image.png"} alt={"cheap food picture"}
                                  className={"tips picture"}/>
-                            <p className={"grocery tips"}>Affordable food</p>
                         </div>
                         <div className={"tips-container"}>
                             <img src={imageBucket + "/save.webp"} alt={"money saving picture"}
                                  className={"tips picture"}/>
-                            <p className={"Money tips"}>Save money</p>
                         </div>
                         <Link to="/chatbot">
                             <img src={imageBucket + "/walle-assistant-bot-picture-web.png"} alt={"money saving picture"}
                                  className={"tips picture"}/>
-                            <p className={"Money tips"}>ChatBot</p>
                         </Link>
-                    </div>
-                    <div className={"suggestion"}>
-
                     </div>
                 </div>
             </div>

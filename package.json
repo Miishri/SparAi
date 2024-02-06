@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.7",
+    "@mui/x-charts": "^6.19.3",
     "@nivo/bar": "^0.84.0",
     "@nivo/line": "^0.84.0",
     "expo-av": "^13.10.5",
@@ -19,6 +23,7 @@
     "helmet": "^7.1.0",
     "i": "^0.3.7",
     "ibm-watson": "^8.0.0",
+    "install": "^0.13.0",
     "npm": "^10.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

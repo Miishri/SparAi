@@ -22,7 +22,9 @@ export default function RecordDetails({moreInformation, updateFields}) {
                     onRecordingEnd={handleStopRecording}
                 />
             </div>
-            {audioData && <button className={"send"} >Send to TTS</button>}
+            {audioData && <button className={"send"} onClick={() => {
+                navigate(-1)
+            }}>Send to TTS</button>}
         </>
     )
 }

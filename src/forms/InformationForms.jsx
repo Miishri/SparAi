@@ -131,7 +131,7 @@ export default function InformationForms() {
                 <form id={"getting-started-form"} onSubmit={onSubmit}>
                     {currentStep}
                     <button className="getting-started-next" type="submit" >{isLastStep ? "Submit" : "Next"}</button>
-                    {!isFirstStep && <button className="getting-started-next" onClick={back}>Back</button>}
+                    {!isFirstStep && currentStepIndex < 4 && <button className="getting-started-next" onClick={back}>Back</button>}
                 </form>
             </div>
         </ >

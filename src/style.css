@@ -393,7 +393,6 @@ select::-ms-expand {
 
   width: 100vw;
 
-  border-top: 1px white solid;
   border-radius: 5px;
 
   padding: 6px;
@@ -435,10 +434,18 @@ select::-ms-expand {
 .WatsonAssistantChatHost {
   margin-bottom: 100px;
 }
-
 /* NAVBAR */
 
 /* DASHBOARD */
 
+.suggestion {
+  margin-top: 45px;
+
+  background: #113b45;
+
+  padding: 5px;
+
+  border-radius: 10px;
+}
 
 /* DASHBOARD */

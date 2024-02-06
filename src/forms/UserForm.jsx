@@ -30,6 +30,9 @@ export default function UserForm({fullName, email, age, isStudent, updateFields}
                     <label className='tgl-btn' htmlFor='toggle-34'></label>
                 </div>
             </div>
+            <div style={{marginTop: "30px"}}>
+                <label>We are not collecting your personal data, all data is discarded after website as closed!</label>
+            </div>
         </>
     )
 }
